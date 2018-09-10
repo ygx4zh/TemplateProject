@@ -1,6 +1,6 @@
 package com.example.dblib;
 
-public abstract class DbQuerier<Key, Value> {
+public abstract class Querier<Key, Value> {
 
     private Key key;
     private Value defValue;
@@ -13,11 +13,11 @@ public abstract class DbQuerier<Key, Value> {
         return defValue;
     }
 
-    public DbQuerier(Key key){
+    public Querier(Key key){
         this.key = key;
     }
 
-    public DbQuerier(Key key, Value defValue){
+    public Querier(Key key, Value defValue){
         this.key = key;
         this.defValue = defValue;
     }
