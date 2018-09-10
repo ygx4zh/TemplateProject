@@ -62,6 +62,10 @@ public class DbManager {
         return sSingleton;
     }
 
+    public DaoSession getDaoSession(){
+        return mDaoSession;
+    }
+
     @WorkerThread
     public String queryConfig(String key, String defValue){
         AppConfigDao appConfigDao = mDaoSession.getAppConfigDao();

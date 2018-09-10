@@ -31,7 +31,7 @@ public class XmlUtils {
         try {
             XmlPullParser parser = XmlPullParserFactory.newInstance().newPullParser();
             ByteArrayInputStream is = new ByteArrayInputStream(xmlSrc.getBytes("UTF-8"));
-            parser.setInput(is,"utf-8");
+            parser.setInput(is,"UTF-8");
             int eventType = parser.getEventType();
             while (eventType != XmlPullParser.END_DOCUMENT){
                 switch (eventType){
