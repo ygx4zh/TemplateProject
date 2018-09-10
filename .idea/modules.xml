@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TemplateProject.iml" filepath="$PROJECT_DIR$/TemplateProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselib/baselib.iml" filepath="$PROJECT_DIR$/baselib/baselib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buildmodule/buildmodule.iml" filepath="$PROJECT_DIR$/buildmodule/buildmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dblib/dblib.iml" filepath="$PROJECT_DIR$/dblib/dblib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/devmodule/devmodule.iml" filepath="$PROJECT_DIR$/devmodule/devmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hardwarelib/hardwarelib.iml" filepath="$PROJECT_DIR$/hardwarelib/hardwarelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tester/tester.iml" filepath="$PROJECT_DIR$/tester/tester.iml" />
+    </modules>
+  </component>
+</project>

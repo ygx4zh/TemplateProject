@@ -1,0 +1,2 @@
+// include ':app'
+include ':dblib', ':hardwarelib', ':baselib', ':buildmodule', ':devmodule', ':tester'
