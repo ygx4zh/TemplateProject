@@ -127,6 +127,7 @@ public class WebServiceRequester {
                 break;
             case ThreadMode.CUR_THREAD:
             default:
+                req();
                 break;
         }
         return this;
