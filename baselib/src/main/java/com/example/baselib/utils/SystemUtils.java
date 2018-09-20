@@ -1,10 +1,12 @@
 package com.example.baselib.utils;
 
+import android.annotation.SuppressLint;
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.example.baselib.BaseConstants;
 
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.SocketException;
@@ -75,5 +77,25 @@ public class SystemUtils {
             Log.d(TAG, "getSupportNetworkInterfaces: "+e.getMessage());
         }
         return nifs;
+    }
+
+    /**
+     * 获取system/build.prop 下的编译信息
+     *
+     * @param key key
+     * @return null if not exist;
+     */
+    public static String getBuildModel(String key){
+        try {
+            @SuppressLint("PrivateApi") @SuppressWarnings("unchecked")
+            Class<?> systemPrepertiesClz =
+                    Class.forName("android.os.SystemProperties");
+            Method getMethod = systemPrepertiesClz.getDeclaredMethod("get", String.class);
+            Object buildModel = getMethod.invoke(null, key);
+            return (String) buildModel;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
