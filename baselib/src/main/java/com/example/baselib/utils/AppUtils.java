@@ -44,4 +44,8 @@ public class AppUtils {
         return -1;
     }
 
+    public static boolean isMainThread(){
+        return Thread.currentThread().getName().equals("main");
+    }
+
 }
